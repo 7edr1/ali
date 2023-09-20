@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+}
+body{
+background: #001;
+display: flex;
+}
+.img-box{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: solid white 3px;
+    flex-shrink: 0;
+}
+.img-box img{
+    width: 100%;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.profile h2{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.mnue{
+    background: #123;
+    width: 60px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    transition: .5s;
+
+}
+.mnue:hover{
+    width: 260px;
+}
+ul{
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+ul li a{
+    display: block;
+    padding:10px ;
+    margin: 10px 0; 
+    display: flex;
+    text-decoration: none;
+    border-radius: 8px;
+    align-items: center;
+    gap: 40px;
+    transition: .5s;
+}
+ul li a:hover,.data-info .box:hover{
+    background: black;
+}
+.log-out{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+
+ul li a i{
+font-size:30px ;
+
+}  
+.content{
+    width: 100%;
+    margin: 10px;
+}
+.title-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: blue;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+
+} 
+
+.data-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap:wrap ;
+}
+.data-info .box{
+    height: 150px;
+    flex-basis: 150px;
+    background: #123;
+    flex-grow: 1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.data-info .box i{
+    font-size: 40px;
+}
+.data-info .box .data {
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+
+
+
